@@ -16,6 +16,9 @@ public class Tweet {
     public String createdAt;
     public User user;
 
+    //for parceler
+    public Tweet(){}
+
     public static Tweet fromJson(JSONObject jsonObject) throws JSONException {
         Tweet tweet = new Tweet();
         tweet.body = jsonObject.getString("text");
